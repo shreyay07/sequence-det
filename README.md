@@ -30,6 +30,7 @@ Output triggers on both 1011 sequences.
 
 ### State Transitions
 
+<<<<<<< HEAD
 | **Current State** | **Input** | **Next State** | **Output** |
 |-------------------|-----------|----------------|------------|
 | S0                | 1         | S1             | 0          |
@@ -39,6 +40,19 @@ Output triggers on both 1011 sequences.
 | S2                | 0         | S0             | 0          |
 | S3                | 1         | S1             | 1          |
 | S3                | 0         | S2             | 0          |
+=======
+State	Input	Next State	Output
+ S0    	1	S1	        0
+ S0	0	S0             	0
+ S1	0	S2	        0
+ S1	1	S1	        0
+ S2	1	S3      	0
+ S2	0	S0      	0
+ S3	1	S4      	0
+ S3	0	S2      	0
+ S4     1       S1              1
+ S4     0       S2              0
+>>>>>>> b170b8e (Updated Sequence Detector)
 
 # How to Run
 
