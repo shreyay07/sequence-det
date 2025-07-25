@@ -28,17 +28,17 @@ Example:
 Input: 1 0 1 1 0 1 1
 Output triggers on both 1011 sequences.
 
-# *State Transitions*
+### State Transitions
 
-State	Input	Next State	Output
- S0     	1	S1	        0
- S0	0	S0             	0
- S1	0	S2	        0
- S1	1	S1	        0
- S2	1	S3      	0
- S2	0	S0      	0
- S3	1	S1      	1
- S3	0	S2      	0
+| **Current State** | **Input** | **Next State** | **Output** |
+|-------------------|-----------|----------------|------------|
+| S0                | 1         | S1             | 0          |
+| S0                | 0         | S0             | 0          |
+| S1                | 0         | S2             | 0          |
+| S1                | 1         | S1             | 0          |
+| S2                | 0         | S0             | 0          |
+| S3                | 1         | S1             | 1          |
+| S3                | 0         | S2             | 0          |
 
 # How to Run
 
